@@ -33,15 +33,19 @@
         <!-- end navigation -->
 
         <!-- hero/jumbotron -->
-        <section class="hero">
-            <h2>Welcome to the portfolio!</h2>
-            <p>We have fun and games.</p>
-            <a href='https://www.freepik.com/vectors/jungle'>Jungle vector created by freepik - www.freepik.com</a>
-        </section>
+        <div class="hero">
+            <div class="attribution">
+                <a href='https://www.freepik.com/vectors/jungle'>Jungle vector created by freepik - www.freepik.com</a>
+            </div>
+            <div class="subtitle">
+                <h2>Welcome to the portfolio!</h2>
+                <p>We have fun and games.</p>
+            </div>
+        </div>
         <!-- end header -->
 
         <!-- "About Me" start - <section> -->
-        <section id="About-Me">
+        <section class="about-me" id="About-Me">
             <div class="left-column">
                 <h3>About Me</h3>
             </div>
@@ -50,10 +54,11 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis provident numquam nam, sequi quo magni fuga consectetur cumque odit inventore nostrum eligendi illum odio laudantium blanditiis quae nisi. Earum, voluptatibus!
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, blanditiis accusamus sed vero voluptatum sequi inventore provident consequatur hic earum autem culpa, totam, beatae quae minus dolores tenetur atque? Recusandae?
                 </p>
+                <img src="./assets/images/Me.jpg" alt="Jonathan's Photo" />
             </div>
         </section>
         <!-- end "About Me" -->
-        
+
         <!-- "Work" start - <section> -->
         <section id="Work">
             <div class="left-column">
@@ -61,11 +66,13 @@
             </div>
             <div class="right-column">
                 <article class="projects">
-                    <div class="project-label">
-                        <h4>Run Buddy</h4>
-                        <P>HTML/CSS</P>
-                    </div>
-                    <img src="./assets/images/run-buddy.jpg" alt="Run Buddy's home page" />
+                    <a href="https://jonathangibbings.github.io/run-buddy/">
+                        <div class="project-label">
+                            <h4>Run Buddy</h4>
+                            <P>HTML/CSS</P>
+                        </div>
+                        <img src="./assets/images/run-buddy.jpg" alt="Run Buddy's home page" />
+                    </a>
                 </article>
                 <article class="projects">
                     <div class="project-label">
@@ -81,7 +88,7 @@
                         <P>Mern Stack</P>
                     </div>
                     <img src="https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fimg.freepik.com%2Ffree-vector%2Fabstract-coming-soon-background-torn-paper-style_1017-25514.jpg" 
-                    alt="Placeholder Image"/>
+                        alt="Placeholder Image"/>
                 </article>
                 <article class="projects">
                     <div class="project-label">
@@ -89,22 +96,22 @@
                         <P>Node/Iot</P>
                     </div>
                     <img src="https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fimg.freepik.com%2Ffree-vector%2Fabstract-coming-soon-background-torn-paper-style_1017-25514.jpg" 
-                    alt="Placeholder Image"/>
+                        alt="Placeholder Image"/>
                 </article>
                 <article class="projects">
                     <div class="project-label">
-                        <h4>Calculateor</h4>
+                        <h4>Calculator</h4>
                         <P>React/JavaScript/CSS</P>
                     </div>
                     <img src="https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fimg.freepik.com%2Ffree-vector%2Fabstract-coming-soon-background-torn-paper-style_1017-25514.jpg" 
-                    alt="Placeholder Image"/>
+                        alt="Placeholder Image"/>
                 </article>
             </div>
         </section>
         <!-- end "Work" -->
 
         <!-- "Contact Me" start - <section> -->
-        <section id="Contact-Me">
+        <section class="contact-me" id="Contact-Me">
             <div class="left-column">
                 <h3>Contact Me</h3>
             </div>
@@ -123,5 +130,6 @@
             </div>
         </section>
         <!-- end "Contact Me" -->
+
     </body>
 </html>
