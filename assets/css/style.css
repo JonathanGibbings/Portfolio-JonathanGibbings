@@ -1,3 +1,10 @@
+/* TO-DO
+    - make top project take up whole width
+    - make images for projects dynamic?
+    implement media queries
+    remove resume section
+    */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -134,6 +141,10 @@ section {
     position: relative;
 }
 
+.projects:first-child {
+    flex: 1 0 100%;
+}
+
 .projects:hover {
     box-shadow: 0 0 20px var(--color3);
     opacity: .75;
@@ -143,6 +154,7 @@ section {
     display: block;
     width: 100%;
     min-width: 300px;
+    max-height: 200PX;
 }
 .project-label {
     position: absolute;
