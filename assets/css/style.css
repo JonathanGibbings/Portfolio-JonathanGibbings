@@ -1,199 +1,243 @@
-/* TO-DO
-    - make top project take up whole width
-    - make images for projects dynamic?
-    implement media queries
-    remove resume section
-    */
-
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-    --color1: rgba(93,186,106,1);
-    --color2: rgba(0,62,41,1);
-    --color3: rgba(46,63,126,1);
-    --color4: rgba(169,203,105,1);
+  --color1: rgba(93, 186, 106, 1);
+  --color2: rgba(0, 62, 41, 1);
+  --color3: rgba(46, 63, 126, 1);
+  --color4: rgba(169, 203, 105, 1);
 }
 
 body {
-    color: var(--color3);
-    background: var(--color4);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: var(--color3);
+  background: var(--color4);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 /* header/nav styles start */
 header {
-    padding: 50px;
-    background-image: url(../images/5362630.jpg);
-    /* https://www.freepik.com/vectors/jungle' Jungle vector created by freepik - www.freepik.com */
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  padding: 50px;
+  background-image: url(../images/5362630.jpg);
+  /* https://www.freepik.com/vectors/jungle' Jungle vector created by freepik - www.freepik.com */
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 header a {
-    text-decoration: none;
-    color: var(--color4);
-    text-shadow: 0 0 10px rgba(0,0,0,1);
+  text-decoration: none;
+  color: var(--color4);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 1);
 }
 
 header h1 {
-    font-weight: bold;
-    font-size: 36px;
+  font-weight: bold;
+  font-size: 48px;
 }
 
 header nav ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header nav ul li a {
-    padding: 35px;
-    font-size: 1.55vw;
+  padding: 35px;
+  font-size: 26px;
 }
 
 header nav ul li a:hover {
-    color: var(--color1);
-    text-shadow: 0 0 20px var(--color4);
+  color: var(--color1);
+  text-shadow: 0 0 20px var(--color4);
 }
 /* end header/nav */
 
 /* hero styles start */
 .hero {
-    background-image: url(../images/5362630.jpg);
-    /* https://www.freepik.com/vectors/jungle' Jungle vector created by freepik - www.freepik.com */
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    justify-content: space-between;
+  background-image: url(../images/5362630.jpg);
+  /* https://www.freepik.com/vectors/jungle' Jungle vector created by freepik - www.freepik.com */
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: space-between;
 }
 
 .subtitle {
-    background: rgba(169,203,105,.75);
-    border: 3px solid var(--color3);
-    padding: 20px;
-    text-align: center;
-    margin: 40px;
+  background: rgba(169, 203, 105, 0.75);
+  border: 3px solid var(--color3);
+  padding: 20px;
+  text-align: center;
+  margin: 40px;
 }
 
 .attribution {
-    margin: auto auto 5px 5px;
+  margin: auto auto 5px 5px;
 }
 
 .attribution a {
-    text-decoration: none;
-    color: var(--color4);
+  text-decoration: none;
+  color: var(--color4);
 }
 /* end hero styles */
 
 /* Section styles start */
 section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    background: var(--color4);
-    margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background: var(--color4);
+  margin: 10px;
 }
 
 .left-column {
-    font-size: 48px;
-    padding: 20px;
-    border-right: 5px solid var(--color3);
-    flex: 1 30%;
-    text-align: right;
+  font-size: 48px;
+  padding: 20px;
+  border-right: 5px solid var(--color3);
+  flex: 1 30%;
+  text-align: right;
 }
 
 .right-column {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 50px;
-    flex: 1 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 50px;
+  flex: 1 70%;
 }
 /* end Section styles */
 
 /* About Me styles start */
 .about-me p {
-    flex: 1 70%;
+  flex: 1 70%;
 }
 
 .about-me img {
-    margin: 10px;
-    border: 5px solid var(--color3);
+  margin: 10px;
+  border: 5px solid var(--color3);
 }
 /* end About Me styles */
 
 /* Work styles start */
 .projects {
-    flex: 1 0 0;
-    margin: 10px;
-    border: 5px solid var(--color3);
-    text-align: center;
-    position: relative;
+  flex: 1 0 40%;
+  margin: 10px;
+  border: 5px solid var(--color3);
+  text-align: center;
+  position: relative;
 }
 
 .projects:first-child {
-    flex: 1 0 100%;
+  flex: 1 0 100%;
 }
 
 .projects:hover {
-    box-shadow: 0 0 20px var(--color3);
-    opacity: .75;
+  box-shadow: 0 0 20px var(--color3);
+  opacity: 0.75;
 }
 
 .projects img {
-    display: block;
-    width: 100%;
-    min-width: 300px;
-    max-height: 200PX;
+  display: block;
+  width: 100%;
+  min-width: 300px;
+  max-height: 200px;
 }
 .project-label {
-    position: absolute;
-    background-color: var(--color2);
-    border: 2px solid var(--color3);
-    padding: 7px;
-    bottom: 4px;
-    left: 4px;
+  position: absolute;
+  background-color: var(--color2);
+  border: 2px solid var(--color3);
+  padding: 7px;
+  bottom: 4px;
+  left: 4px;
 }
 
 .project-label h4 {
-    font-size: large;
-    color: var(--color4);
+  font-size: large;
+  color: var(--color4);
 }
 
 .project-label p {
-    line-height: 1;
-    font-size: small;
-    color: var(--color4);
+  line-height: 1;
+  font-size: small;
+  color: var(--color4);
 }
 /* end Work styles */
 
 /* Contact Me styles start */
 .contact-me ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .contact-me ul li a {
-    padding: 35px;
-    font-size: 1.55vw;
-    text-decoration: none;
+  padding: 35px;
+  font-size: 24px;
+  text-decoration: none;
 }
 
 .contact-me ul li a:hover {
-    color: var(--color2);
-    text-shadow: 0 0 20px var(--color3);
+  color: var(--color2);
+  text-shadow: 0 0 20px var(--color3);
 }
 /* end Contact Me styles */
+
+/* Media Query for tablets and smaller */
+@media screen and (max-width: 768px) {
+    .projects:first-child{
+        flex: 1 0 0;
+    }
+
+    header {
+        justify-content: center;
+        align-items: center;
+    }
+
+    header h1 {
+        margin: 20px auto;
+    }
+
+    .left-column {
+        font-size: 24px;
+    }
+
+    .contact-me ul li a {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
+/* Media Query for mobile and smaller */
+@media screen and (max-width: 575px) {
+    /* TODO - make left column stack on right and make hero stack */
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero {
+        position: relative;
+    }
+
+    .attribution {
+        position: absolute;
+        bottom: 5px;
+    }
+
+    .left-column {
+        border-right: none;
+        border-bottom: 5px solid var(--color3);
+    }
+
+    .left-column h3 {
+        text-align: center;
+    }
+}
